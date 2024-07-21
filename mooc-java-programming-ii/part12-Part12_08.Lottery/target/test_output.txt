@@ -1,0 +1,1 @@
+[{"className":"LotteryRowTest","methodName":"testOneRandomization","pointNames":["12-08"],"status":"PASSED"},{"className":"LotteryRowTest","methodName":"testRandomizeNumbersRandomizesNewNumbers","pointNames":["12-08"],"status":"PASSED"},{"className":"LotteryRowTest","methodName":"testMultipleRandomizations","pointNames":["12-08"],"status":"PASSED"}]

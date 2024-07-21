@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: B_HandTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.118 s <<< FAILURE! - in B_HandTest
+onCompareToMethod(B_HandTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: in class Hand add a method public int compareTo(Hand comparable)
+	at B_HandTest.onCompareToMethod(B_HandTest.java:253)
+
+sortedPrintingWorks(B_HandTest)  Time elapsed: 0.113 s  <<< FAILURE!
+java.lang.AssertionError: 
+With code 
+Hand hand = new Hand();
+hand.add( new Card(12,Suit.HEART) ); 
+hand.add( new Card(14,Suit.DIAMOND) ); 
+hand.add( new Card(2,Suit.SPADE) ); 
+hand.add( new Card(2,Suit.CLUB) ); 
+hand.sort();
+hand.print()
+second card should be SPADE 2
+print was
+HEART Q
+DIAMOND A
+SPADE 2
+CLUB 2
+
+	at B_HandTest.sortedPrintingWorks(B_HandTest.java:217)
+
+methodSort(B_HandTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+NoSuchElementException, in call sort(). error was caused by code
+Hand hand = new Hand();
+hand.print();
+	at B_HandTest.methodSort(B_HandTest.java:170)
+
+comparisonWorks1(B_HandTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Method compareTo(Hand) of class Hand missing.
+	at B_HandTest.comparisonWorks1(B_HandTest.java:294)
+
+comparisonWorks2(B_HandTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Method compareTo(Hand) of class Hand missing.
+	at B_HandTest.comparisonWorks2(B_HandTest.java:328)
+
+comparisonWorks3(B_HandTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Method compareTo(Hand) of class Hand missing.
+	at B_HandTest.comparisonWorks3(B_HandTest.java:361)
+
+comparisonWorks4(B_HandTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Method compareTo(Hand) of class Hand missing.
+	at B_HandTest.comparisonWorks4(B_HandTest.java:402)
+
+comparisonWorks5(B_HandTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Method compareTo(Hand) of class Hand missing.
+	at B_HandTest.comparisonWorks5(B_HandTest.java:445)
+
+onImplementComparableHand(B_HandTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Make sure the class Hand has interface "Comparable<Hand>"
+	at B_HandTest.onImplementComparableHand(B_HandTest.java:239)
+
